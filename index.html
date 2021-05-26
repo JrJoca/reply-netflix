@@ -25,7 +25,42 @@
             <input type="search" class="form-control" placeholder="Busca">
         </form>
 
+        <ul class="list-unstyled font-weight-bold">
+            <li class="media media-avatar">
+                <img src="assets/img/avatar.jpg" alt="Avatar">
+                <div class="media-body">
+                    <p class="h6 m-0">Joaquim Amorim</p>
+                    <small>Trocar Perfil</small>
+                </div>
+            </li>
+
+            <li class="divider"></li>
+
+            <li><a href="" class="class-reset"></a>Ínicio</li>
+            <li><a href="" class="class-reset"></a>Séries de Ação e Aventura</li>
+            <li><a href="" class="class-reset"></a>Séries Teen</li>
+            <li><a href="" class="class-reset"></a>Séries América Latina</li>
+            <li><a href="" class="class-reset"></a>Filmes Europeus</li>
+            <li><a href="" class="class-reset"></a>Animes</li>
+            <li><a href="" class="class-reset"></a>Filmes de Ação e aventura</li>
+            <li><a href="" class="class-reset"></a>Cartoons</li>
+        </ul>
+
     </nav>
+
+
+    <script>
+
+        const btn = document.querySelector('.navbar-toggler');
+        const navbar = document.querySelector('.navbar');
+
+        btn.addEventListener('click', e => {
+
+            navbar.classList.toggle('sidebar-open');
+
+        });
+
+    </script>
 
 
     <!-- 

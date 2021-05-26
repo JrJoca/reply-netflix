@@ -2,6 +2,11 @@ body, bg-dark {
     background-color: #1b1b1b!important;
 }
 
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+
 .navbar .form-control {
     background-color: #1b1b1b!important;
     color: #FFF;
@@ -21,4 +26,36 @@ body, bg-dark {
     border: none;
     padding-left: 0;
     padding-right: 0;
+}
+
+.navbar ul {
+    color: #999898;
+    max-width: 250px;
+    background-color: #1b1b1b;
+    position: absolute;
+    top: 60px;
+    left: -250px;
+    height: calc(100vh  - 60px);
+    overflow-y: auto;
+    transition: all 0.1s ease-out;
+    opacity: .5;
+}
+
+.navbar.sidebar-open ul {
+    left: 0;
+    opacity: 1;
+}
+
+.nav ul li {
+    padding: 0.3em 1em;
+
+}
+
+.nav ul li.divider {
+    border-bottom: #999898 1px solid;
+    margin: o.3em auto;
+}
+
+.media-avatar img {
+    height: 38px;
 }
